@@ -1,4 +1,4 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
@@ -20,11 +20,15 @@ class RequestHandler(BaseHTTPRequestHandler):
             "<h1>Message Decryption</h1>\n"
             "<form method='POST'>\n"
             "<label for='ciphertext'>Ciphertext:</label>\n"
+            "<br>\n"
             "<input type='text' id='ciphertext' name='ciphertext' required><br>\n"
             "<label for='key'>Key:</label>\n"
+            "<br>"
             "<input type='text' id='key' name='key' required><br>\n"
             "<label for='iv'>IV:</label>\n"
+            "</br>\n"
             "<input type='text' id='iv' name='iv' required><br>\n"
+            "<br>"
             "<input type='submit' value='Decrypt'>\n"
             "</form>\n"
             "</body>\n"
@@ -76,6 +80,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                 "</html>\n"
             )
             self.send_response(400)
+           
             self.send_header('Content-type', 'text/html')
             self.end_headers()
             self.wfile.write(response.encode())
@@ -120,7 +125,7 @@ def decrypt_text(ciphertext, key, iv):
     decrypted_text = cipher.decrypt(ciphertext)
     return unpad(decrypted_text, AES.block_size).decode()
 
-def run_server(server_class=HTTPServer, handler_class=RequestHandler, port=8000):
+def run_server(server_class=ThreadingHTTPServer, handler_class=RequestHandler, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f'Starting server on port {port}...')
@@ -128,4 +133,3 @@ def run_server(server_class=HTTPServer, handler_class=RequestHandler, port=8000)
 
 if __name__ == '__main__':
     run_server()
-
