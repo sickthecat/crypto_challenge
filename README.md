@@ -44,7 +44,7 @@ Welcome to the Challenge Repository! In this repository, you can participate in 
    - Press Enter twice to run the code and see the decrypted text.
 
 Additionally, we provide a hosted web app for those who prefer a more comfortable experience. The chosen encryption method used is AES-256-CBC. To decrypt the gift card code, you'll need the following parts:
-- http://afflicted.sh:8000/
+- https://afflicted.sh:8000/
 - Encrypted message (ciphertext)
 - 256-bit key
 - 128-bit IV (Initialization Vector)
