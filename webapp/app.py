@@ -115,7 +115,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                 "</head>\n"
                 "<body>\n"
                 "<h1>Message Decryption</h1>\n"
-                f"<p>Decrypted Text: {decrypted_text}</p>\n"
+                f"<p>Decrypted Text: {decrypted_text}</p>\n Please email 5570706572456368656C6F6E[@]gmail.com to join the VIP club ;) ! Congratulations!"
                 "</body>\n"
                 "</html>\n"
             )
