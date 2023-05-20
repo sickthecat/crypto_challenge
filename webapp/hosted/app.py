@@ -5,6 +5,7 @@ from Crypto.Util.Padding import unpad
 import base64
 import string
 import ssl
+import threading
 
 
 class RequestHandler(BaseHTTPRequestHandler):
@@ -191,7 +192,9 @@ def run_server(server_class=ThreadingHTTPServer, handler_class=RequestHandler, p
     # Start the server with SSL/TLS
     httpd.socket = ssl_context.wrap_socket(httpd.socket, server_side=True)
     print(f'Starting server on port {port} with SSL/TLS...')
-    httpd.serve_forever()
+
+    # Start a new thread for each request
+    threading.Thread(target=httpd.serve_forever).start()
 
 
 if __name__ == '__main__':
