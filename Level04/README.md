@@ -3,7 +3,7 @@ Prime numbers dancing, enveloped in light.
 Pristine and profound, they proudly reside,
 RSA's foundation, where secrets abide.
 
-Pristine primes, P and Q, pillars of might,
+Pristine primes, P, Q, and R pillars of might,
 Bound in secrecy, veiled from sight.
 Their whispers entwined, a cryptographic dance,
 Breathing life into encryption, leaving no chance.
