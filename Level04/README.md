@@ -41,6 +41,6 @@ Dwelling in the realm where secrets it hurls.
 So, let us cherish the power of primes,
 Delighting in RSA's wondrous chimes.
 The dance of secrecy, forever unmarred,
-In the tapestry of numbers, they remain starred.`
+In the tapestry of numbers, they remain starred.
 
 </p></pre>
