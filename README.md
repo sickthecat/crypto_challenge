@@ -1,4 +1,4 @@
-# Challenge Repository
+# Challenge Repository - LVL 03
 
 Welcome to the Challenge Repository! In this repository, you can participate in our challenge and decrypt the gift card code using various methods. You have three options to get started:  ``https://www.youtube.com/@UpperEchelon``
 
@@ -60,4 +60,32 @@ If you're new to encryption or want to enhance your knowledge, here are some res
 - [Cryptography in Python](https://cryptography.io/en/latest/)
 - [Pyodide Documentation](https://pyodide.org/)
 
-Feel free to explore these resources to gain a deeper understanding of encryption principles and techniques. Good luck with the challenge!
+
+# Level 04: CRITICAL MASS
+
+Welcome to Level 04 of the game! Brace yourself, as things are about to get more complicated. This level will be extremely difficult, but fear not, as you have a few tools at your disposal to aid you in your quest.
+
+## Video Puzzle
+
+The key components required to progress are hidden within the video. Pay close attention and solve the puzzle within to move forward. It might not be easy, but your determination will guide you.
+
+## Claimable Bitcoin Wallet
+
+We have introduced a new method for delivering the bounty – a claimable bitcoin wallet. You can track the wallet (18sNbdgVyzWj8FJh17zehprYPkq6UqK6kX) to know when someone claims the prize and removes it from the wallet. If the bounty is still in the wallet, it means it remains unclaimed. The private key for this wallet will be revealed at the end of the puzzle.
+
+## Github Repository
+
+Explore the [Github repository](https://github.com/sickthecat/crypto_challenge/blob/main/) for relevant information regarding this level. It contains valuable resources that might assist you in your journey. Take the time to delve into the repository and uncover its secrets.
+
+## Discord Community
+
+Join our active bounty hunters' Discord community to connect with like-minded individuals. Remember to maintain respect and uphold a friendly environment. We are all here to have fun, as the game is still a work in progress. Your active participation in the community can enhance the overall experience.
+
+## Hyper Relevant Resources
+
+To aid you in your quest, make sure to utilize the following hyper-relevant resources:
+
+- [https://afflicted.sh:8001/](https://afflicted.sh:8001/)
+- [https://afflicted.sh:8000/](https://afflicted.sh:8000/)
+
+Wield these resources wisely and good luck on your Level 04 adventure!
